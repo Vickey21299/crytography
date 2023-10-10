@@ -15,6 +15,51 @@ Here are some examples of vulnerabilities in secure systems:
 * **Freak:** The Freak attack was a vulnerability in the SSL/TLS protocol that allowed attackers to force clients and servers to use weak encryption algorithms.
 
 These are just a few examples of the many attacks and vulnerabilities that can affect cryptographic systems. It is important to be aware of these risks and to take steps to mitigate them.
+here is one question of codeing 
+![image](https://github.com/Vickey21299/crytography/assets/108173950/68dc6afa-f032-4bbe-a0e5-5b4a2d3a90e6)
+
+here we can attack on it like this :
+![image](https://github.com/Vickey21299/crytography/assets/108173950/4d2fd587-b232-4692-b29d-e5fcfb1ee729)
+
+q2 ![image](https://github.com/Vickey21299/crytography/assets/108173950/2f6a99ca-8601-4d0a-a3f0-cf35070facdc)
+in this question this slidex attack is fisiable 
+Algorithm 1 The pseudocode of the slidex attack function
+• Here is the pseudocode of the slidex attack function:
+def attack(oracle, pi func, p):
+”””Implements the slidex attack on the attack.py file.
+Args:
+oracle: A function that takes an input number x between 0 to p-1 and returns
+the output on x.
+pi func: A function that takes an input number x between 0 to p-1 and returns
+π(x)
+p: A large prime number
+Returns: A tuple (b, k1, k2), where b is the flag that was sampled by the
+challenger, k1 is the first key of the Even-Mansour cipher, and k2 is the second key
+of the Even-Mansour cipher.
+”””
+• Generate a list of 2(n+1)/2 known plaintexts. plaintexts = random.sample(range(0,
+p), 2 * (p // 2 + 1))
+For each pair of plaintexts, calculate the XOR of the plaintexts. xor values = [plaintext1 ⊕ plaintext2 for plaintext1, plaintext2 in zip(plaintexts[:-1], plaintexts[1:])]
+• Sort the XOR values in ascending order.
+xor values.sort()
+• For each collision in the sorted XOR values, check if the corresponding plaintexts
+satisfy the condition P ⊕P
+∗ = K1. If they do, then we have found a pair of plaintexts
+that can be used to distinguish between the PRP and a random permutation.
+for i in range(len(xor values) - 1):
+if xor values[i] == xor values[i + 1] :
+k1 = plaintexts[i] ⊕ plaintexts[i + 1]
+Query the oracle on the two plaintexts and check if E(P) ⊕ F(P) = E(P
+∗
+) ⊕ F(P
+∗
+).
+if oracle(0, k1) == oracle(1, k1) :
+return(0, k1, None)
+The attack has failed.
+return (None, None, None)[b is the first element of result]
+
+
 
 Here are some tips for mitigating the risk of attack:
 
