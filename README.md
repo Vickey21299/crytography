@@ -1,5 +1,5 @@
 Different cryptographic constructions have different attacks and vulnerabilities, even on systems that are considered to be secure. This is because cryptography is a complex field, and there is no single solution that is secure against all attacks.
-
+in assigemnt 2 , differnt attack can fieasable  and theory approuch and coding approuches are add see that file 
 Some common attacks on cryptographic systems include:
 
 * **Brute-force attacks:** In a brute-force attack, the attacker tries all possible keys until they find the correct one. This type of attack is most effective against systems with weak keys.
